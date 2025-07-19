@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anime Poster Store</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="cart.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="container header-flex">
+    <a href="modern-login-signin-form.html" class="login-btn">Login</a>
+    
+    <div class="logo">
+      <!-- Use image logo here or stick with text -->
+      <!-- <img src="your-logo.png" alt="AnimeVerse Logo" /> -->
+      <h1>AnimeVerse</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#" onclick="toggleCart()">🛒 Cart (<span id="cartCount">0</span>)</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Find Your Next Favorite Anime's Stuff</h2>
+      <p>From legendary classics to new-gen hits, bring your wall to life!</p>
+
+      <!-- 🔥 Quote Slider -->
+      <div class="quote-slider">
+        <p class="quote active">"Power comes in response to a need, not a desire🔥." – Goku</p>
+        <p class="quote">"A lesson without pain is meaningless🔥." – Edward Elric</p>
+        <p class="quote">"Forgetting is like a wound. The wound may heal, but it has already left a scar🔥." – Monkey D. Luffy</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights Section -->
+  <section class="highlights">
+    <div class="highlight-card">
+      <h3>Best Sellers</h3>
+      <p>Explore our most loved anime posters!</p>
+      <a href="product-list.html" class="btn">Shop Now</a>
+    </div>
+    <div class="highlight-card">
+      <h3>New Arrivals</h3>
+      <p>Fresh drops from the latest anime series.</p>
+      <a href="new-arrivals.html" class="btn">See What's New</a>
+    </div>
+    <div class="highlight-card">
+      <h3>Fan Favorites</h3>
+      <p>Posters rated 5 stars by fellow otakus!</p>
+      <a href="Fan-favorite.html" class="btn">Browse Top Picks</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    
+  </footer>
+
+  <!-- 🔄 Quote Slider Script -->
+  <script>
+    const quotes = document.querySelectorAll(".quote");
+    let index = 0;
+
+    setInterval(() => {
+      quotes[index].classList.remove("active");
+      index = (index + 1) % quotes.length;
+      quotes[index].classList.add("active");
+    }, 4000);
+  </script>
+
+  <!-- 🛒 Cart Sidebar -->
+  <div id="cartSidebar" class="cart-sidebar">
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+    <div class="cart-total">
+      <strong>Total:</strong> $<span id="cartTotal">0.00</span>
+    </div>
+    <button class="close-btn" onclick="toggleCart()">Close</button>
+  </div>
+  <div id="overlay" class="overlay" onclick="toggleCart()"></div>
+
+  <!-- 🔗 Cart JavaScript -->
+  <script src="cart.js"></script>
+
+</body>
+</html>

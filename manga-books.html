@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manga Books</title>
+  <link rel="stylesheet" href="manga-books.css" />
+  <link rel="stylesheet" href="cart.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1 class="glow-text">📚 Manga Books 📚</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product-list.html">Products</a></li>
+        <li><a href="#" onclick="toggleCart()">🛒 Cart (<span id="cartCount">0</span>)</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="products">
+    <!-- Repeat for 15 items -->
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Manga books/m1.jpg" alt="Manga 1" />
+      </div>
+      <h3>Dragonball 01: The Monkey King: Volume 1 Akira Toriyama</h3>
+      <p>$9.99</p>
+      <button onclick="addToCart('Anime Series-1', 19.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Manga books/m2.jpg" alt="Manga 2" />
+      </div>
+      <h3>Naruto, Vol. 42 : The Secret of the Mangekyo Kishimoto, Masashi </h3>
+      <p>$8.99</p>
+      <button onclick="addToCart('Anime Series-1', 19.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Manga books/m3.jpg" alt="Manga 2" />
+      </div>
+      <h3>Jujutsu Kaisen Vol 1, (vol - 1): Paperback – 1 January 2019</h3>
+      <p>$8.99</p>
+      <button onclick="addToCart('Anime Series-1', 19.99)">Add to Cart</button>
+    </div>
+    
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Manga books/m4.jpg" alt="Manga 2" />
+      </div>
+      <h3>One Piece: Wano 103-105 (103 - 105): Paperback – 3 June 2025</h3>
+      <p>$8.99</p>
+      <button onclick="addToCart('Anime Series-1', 19.99)">Add to Cart</button>
+    </div>
+    
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Manga books/m5.jpg" alt="Manga 2" />
+      </div>
+      <h3>Jujutsu Kaisen 26 Paperback – 20 May 2025 by Gege Akutami (Author)</h3>
+      <p>$8.99</p>
+      <button onclick="addToCart('Anime Series-1', 19.99)">Add to Cart</button>
+    </div>
+    
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Manga books/m6.jpg" alt="Manga 2" />
+      </div>
+      <h3>Simon & Schuster Naruto V70 Paperback – by Masashi Kishimoto (Author)</h3>
+      <p>$8.99</p>
+      <button onclick="addToCart('Anime Series-1', 19.99)">Add to Cart</button>
+    </div>
+    
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Manga books/m7.jpg" alt="Manga 2" />
+      </div>
+      <h3>One-Punch Man, Vol. 1 (Volume 1)ONE and Murata, Yusuke Paperback – 24 September 2015</h3>
+      <p>$8.99</p>
+      <button onclick="addToCart('Anime Series-1', 19.99)">Add to Cart</button>
+    </div>
+    
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Manga books/m8.jpg" alt="Manga 2" />
+      </div>
+      <h3>Solo Leveling, Vol. 1– 2 March 2021by DUBU(Artist), Chugong (Original Author)</h3>
+      <p>$8.99</p>
+      <button onclick="addToCart('Anime Series-1', 19.99)">Add to Cart</button>
+    </div>
+    
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Manga books/m9.jpg" alt="Manga 2" />
+      </div>
+      <h3>Demon Slayer: Kimetsu No Yaiba, Vol. 20, Volume 20 Paperback – 2 February 2021</h3>
+      <p>$8.99</p>
+      <button onclick="addToCart('Anime Series-1', 19.99)">Add to Cart</button>
+    </div>
+    
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Manga books/m10.jpg" alt="Manga 2" />
+      </div>
+      <h3>Attack on Titan Vol. 1 Kindle Edition by Hajime Isayama (Author, Artist) Kindle Edition</h3>
+      <p>$8.99</p>
+      <button onclick="addToCart('Anime Series-1', 19.99)">Add to Cart</button>
+    </div>
+    
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Manga books/m11.jpg" alt="Manga 2" />
+      </div>
+      <h3>Kaiju No. 8, Vol. 1, Volume 1 Matsumoto, Naoya Paperback – 1 January 2021</h3>
+      <p>$8.99</p>
+      <button onclick="addToCart('Anime Series-1', 19.99)">Add to Cart</button>
+    </div>
+    
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Manga books/m12.jpg" alt="Manga 2" />
+      </div>
+      <h3>Uzumaki (3-in-1 Deluxe Edition): Includes vols. 1, 2 & 3 (Junji Ito) Hardcover</h3>
+      <p>$8.99</p>
+      <button onclick="addToCart('Anime Series-1', 19.99)">Add to Cart</button>
+    </div>
+    
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Manga books/m13.jpg" alt="Manga 2" />
+      </div>
+      <h3>Boruto: Two Blue Vortex 2 Paperback – 3 June 2025 by Masashi Kishimoto (Author)</h3>
+      <p>$8.99</p>
+      <button onclick="addToCart('Anime Series-1', 19.99)">Add to Cart</button>
+    </div>
+    
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Manga books/m14.jpg" alt="Manga 2" />
+      </div>
+      <h3>Jujutsu Kaisen, Vol.0 Paperback – 5 January 2021 by Gege Akutami (Author)</h3>
+      <p>$8.99</p>
+      <button onclick="addToCart('Anime Series-1', 19.99)">Add to Cart</button>
+    </div>
+    
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Manga books/m15.jpg" alt="Manga 2" />
+      </div>
+      <h3>The Gods Lie Paperback – Illustrated, 19 April 2016 by Kaori Ozaki (Author)</h3>
+      <p>$8.99</p>
+      <button onclick="addToCart('Anime Series-1', 19.99)">Add to Cart</button>
+    </div>
+    
+    <!-- Add more manga items here -->
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My eCommerce Store</p>
+  </footer>
+
+  <!-- Cart Sidebar -->
+  <div id="cartSidebar" class="cart-sidebar">
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+    <div class="cart-total">
+        <strong>Total:</strong> $<span id="cartTotal">0.00</span>
+    </div>
+    <button class="close-btn" onclick="toggleCart()">Close</button>
+</div>
+<div id="overlay" class="overlay" onclick="toggleCart()"></div>
+
+<script src="cart.js"></script>
+
+</body>
+</html>

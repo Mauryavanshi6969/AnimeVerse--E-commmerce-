@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - AnimeVerse</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Russo+One&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #e3f2fd;
+      color: #0d47a1;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .home-btn {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+    }
+
+    .home-btn a {
+      text-decoration: none;
+      background-color: #1976d2;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: background 0.3s;
+    }
+
+    .home-btn a:hover {
+      background-color: #0d47a1;
+    }
+
+    .contact-container {
+      max-width: 900px;
+      margin: 5rem auto 3rem auto;
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .contact-title {
+      text-align: center;
+      font-family: 'Russo One', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .dev-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .dev-info img {
+    width: 30%;
+    height: 40%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    }
+
+    .dev-details {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .review-section {
+      margin-top: 2rem;
+    }
+
+    .review-section h3 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: #1976d2;
+    }
+
+    .review-section textarea {
+      width: 100%;
+      height: 100px;
+      border: 2px solid #90caf9;
+      border-radius: 8px;
+      padding: 1rem;
+      font-size: 1rem;
+      resize: vertical;
+      background-color: #f1f8ff;
+    }
+
+    .review-section button {
+      margin-top: 1rem;
+      padding: 0.6rem 1.5rem;
+      background-color: #1976d2;
+      border: none;
+      color: white;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .review-section button:hover {
+      background-color: #0d47a1;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 1rem;
+      background-color: #0d47a1;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔙 Home Button -->
+  <div class="home-btn">
+    <a href="index.html">🏠 Home</a>
+  </div>
+
+  <div class="contact-container">
+    <h2 class="contact-title">Contact the Developer</h2>
+    <div class="dev-info">
+      <img src="img/Vivek-one piece.png" alt="Developer Photo">
+      <div class="dev-details">
+        <p><strong>Name:</strong> Vivek Mauryavanshi</p>
+        <p><strong>Email:</strong> 001vivekkrmaurya@gmail.com</p>
+        <p><strong>Phone:</strong> +91-9140564269</p>
+      </div>
+    </div>
+
+    <div class="review-section">
+      <h3>Leave a Review 💬</h3>
+      <textarea placeholder="Write your thoughts or feedback..."></textarea>
+      <br>
+      <button onclick="alert('Thanks for your review!')">Submit Review</button>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 AnimeVerse. All rights reserved.
+  </footer>
+
+</body>
+</html>

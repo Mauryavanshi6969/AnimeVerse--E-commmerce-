@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Limited Editions</title>
+  <link rel="stylesheet" href="limited-editions.css" />
+  <link rel="stylesheet" href="cart.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1 class="glow-text">🔥 Limited Editions 🔥</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product-list.html">Products</a></li>
+        <li><a href="#" onclick="toggleCart()">🛒 Cart (<span id="cartCount">0</span>)</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="products">
+   <!-- Example Limited Edition Product -->
+  <div class="product">
+    <div class="image-container">
+      <img src="img/Limited Edition/le-1.webp" alt="Limited Item 1" />
+      <span class="limited-tag">Only 5 Left!</span>
+    </div>
+    <h3>Blumhouse Halloween Limited Series Matte Finish Poster Fine Art Print  (18 inch X 12 inch, Rolled)</h3>
+    <p>$99.99</p>
+    <button onclick="addToCart('Luffy Uz', 29.99)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <div class="image-container">
+      <img src="img/Limited Edition/le-2.webp" alt="Limited Item 1" />
+      <span class="limited-tag">Only 5 Left!</span>
+    </div>
+    <h3>Anime Paper Print  (12 inch X 18 inch), Special PriceGet extra 37% off (price inclusive of cashback/coupon)</h3>
+    <p>$99.99</p>
+    <button onclick="addToCart('Luffy Uz', 29.99)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <div class="image-container">
+      <img src="img/Limited Edition/le-3.webp" alt="Limited Item 1" />
+      <span class="limited-tag">Only 5 Left!</span>
+    </div>
+    <h3>PATPAT TRADING PRIVATE LIMITED Sanrio Kawaii Brooch Pins Six Piece Set Alloy Durable Brooch</h3>
+    <p>$99.99</p>
+    <button onclick="addToCart('Luffy Uz', 29.99)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <div class="image-container">
+      <img src="img/Limited Edition/le-4.webp" alt="Limited Item 1" />
+      <span class="limited-tag">Only 5 Left!</span>
+    </div>
+    <h3>Hiddenleafstore KAZORO2 Key Chain, Bank Offer100% Cashback upto 500Rs on Axis Bank </h3>
+    <p>$99.99</p>
+    <button onclick="addToCart('Luffy Uz', 29.99)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <div class="image-container">
+      <img src="img/Limited Edition/le-5.webp" alt="Limited Item 1" />
+      <span class="limited-tag">Only 5 Left!</span>
+    </div>
+    <h3>MSNB Shinchan Face Changing Keychain , Bank Offer100% Cashback upto 500Rs on Axis Bank</h3>
+    <p>$99.99</p>
+    <button onclick="addToCart('Luffy Uz', 29.99)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <div class="image-container">
+      <img src="img/Limited Edition/le-6.webp" alt="Limited Item 1" />
+      <span class="limited-tag">Only 5 Left!</span>
+    </div>
+    <h3>Funfob Bleach Ichigo Keychain With Hook & Strap For Fans Gifting Anime (Ichigo Bleach) Key Chain</h3>
+    <p>$99.99</p>
+    <button onclick="addToCart('Luffy Uz', 29.99)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <div class="image-container">
+      <img src="img/Limited Edition/le-7.webp" alt="Limited Item 1" />
+      <span class="limited-tag">Only 5 Left!</span>
+    </div>
+    <h3>SFA Naruto Anime Limited Edition Eco-Friendly Keychain Set Key Chain, This keyring is multi-functional</h3>
+    <p>$99.99</p>
+    <button onclick="addToCart('Luffy Uz', 29.99)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <div class="image-container">
+      <img src="img/Limited Edition/le-8.webp" alt="Limited Item 1" />
+      <span class="limited-tag">Only 5 Left!</span>
+    </div>
+    <h3>Men Full Sleeve Graphic Print Reversible Hooded Sweatshirt, Winter Wear, Mr Anime Men's Sweatshirts</h3>
+    <p>$99.99</p>
+    <button onclick="addToCart('Luffy Uz', 29.99)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <div class="image-container">
+      <img src="img/Limited Edition/le-9.webp" alt="Limited Item 1" />
+      <span class="limited-tag">Only 5 Left!</span>
+    </div>
+    <h3>12pcs Manga Comic Anime One Piece Characters Marine Wanted Poster Collectible Limited Edition </h3>
+    <p>$99.99</p>
+    <button onclick="addToCart('Luffy Uz', 29.99)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <div class="image-container">
+      <img src="img/Limited Edition/le-10.webp" alt="Limited Item 1" />
+      <span class="limited-tag">Only 5 Left!</span>
+    </div>
+    <h3>One Piece A4 Poster – Collector's Set | Anime Wall Art Photographic Paper  (11.7 inch X 8.3 inch)</h3>
+    <p>$99.99</p>
+    <button onclick="addToCart('Luffy Uz', 29.99)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <div class="image-container">
+      <img src="img/Limited Edition/le-11.webp" alt="Limited Item 1" />
+      <span class="limited-tag">Only 5 Left!</span>
+    </div>
+    <h3>Mubco Sneakers Shoe Keychain | Strap Charm & Hook | PVC Key Ring Gift Boy Girl |Red Key Chain</h3>
+    <p>$99.99</p>
+    <button onclick="addToCart('Luffy Uz', 29.99)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <div class="image-container">
+      <img src="img/Limited Edition/le-12.webp" alt="Limited Item 1" />
+      <span class="limited-tag">Only 5 Left!</span>
+    </div>
+    <h3>Men & Women Full Sleeve Graphic Print Hooded Sweatshirt, limited-editions | Hoodie | Unisexual</h3>
+    <p>$99.99</p>
+    <button onclick="addToCart('Luffy Uz', 29.99)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <div class="image-container">
+      <img src="img/Limited Edition/le-13.webp" alt="Limited Item 1" />
+      <span class="limited-tag">Only 5 Left!</span>
+    </div>
+    <h3>gtrp Psyduck Action Figure Limited Edition Bobblehead with Mobile Holder  (Multicolor) || Anime Figure</h3>
+    <p>$99.99</p>
+    <button onclick="addToCart('Luffy Uz', 29.99)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <div class="image-container">
+      <img src="img/Limited Edition/le-14.webp" alt="Limited Item 1" />
+      <span class="limited-tag">Only 5 Left!</span>
+    </div>
+    <h3>n v p Vintage Style Ship Pocket Watch Key Chain Car Bike || Limited edition Home Keychain Key Chain </h3>
+    <p>$99.99</p>
+    <button onclick="addToCart('Luffy Uz', 29.99)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <div class="image-container">
+      <img src="img/Limited Edition/le-15.webp" alt="Limited Item 1" />
+      <span class="limited-tag">Only 5 Left!</span>
+    </div>
+    <h3>gtrp Vintage Naruto theme metal Clock || limited-editions Pocket Clock keyring-New1027 Key Chain</h3>
+    <p>$99.99</p>
+    <button onclick="addToCart('Luffy Uz', 29.99)">Add to Cart</button>
+  </div>
+  
+
+  </section>
+
+  <footer>
+    <p> </p>
+  </footer>
+
+  <!-- Cart Sidebar -->
+  <div id="cartSidebar" class="cart-sidebar">
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+    <div class="cart-total">
+        <strong>Total:</strong> $<span id="cartTotal">0.00</span>
+    </div>
+    <button class="close-btn" onclick="toggleCart()">Close</button>
+</div>
+<div id="overlay" class="overlay" onclick="toggleCart()"></div>
+
+<script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anime Accessories</title>
+  <link rel="stylesheet" href="accessories.css" />
+  <link rel="stylesheet" href="cart.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1 class="glow-text">✨ Anime Clothing ✨</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product-list.html">Products</a></li>
+        <li><a href="#" onclick="toggleCart()">🛒 Cart (<span id="cartCount">0</span>)</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="products">
+    <!-- Sample accessory (Repeat for 15) -->
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Clothing/c-1.webp" alt="Accessory 1" />
+      </div>
+      <h3>Men Printed Round Neck Pure Cotton Black T-Shirt <br>(Itachi)</h3>
+      <p>$4.99</p>
+      <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Clothing/c-2.webp" alt="Accessory 2" />
+      </div>
+      <h3>Men Graphic Print Round Neck Pure Cotton Black T-Shirt (Sword-Man)</h3>
+      <p>$6.99</p>
+      <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Clothing/c-3.webp" alt="Accessory 2" />
+      </div>
+      <h3>Men Graphic Print Pure Cotton Black T-Shirt (Goku Kamehameha)</h3>
+      <p>$6.99</p>
+      <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Clothing/c-4.webp" alt="Accessory 2" />
+      </div>
+      <h3>Men Graphic Print Pure Cotton Black T-Shirt (Monkey-D-Luffy)</h3>
+      <p>$6.99</p>
+      <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Clothing/c-5.webp" alt="Accessory 2" />
+      </div>
+      <h3>Men Graphic Print Pure Cotton Black T-Shirt (Gojo X Sakuna)</h3>
+      <p>$6.99</p>
+      <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Clothing/c-6.webp" alt="Accessory 2" />
+      </div>
+      <h3>Men Graphic Print Pure Cotton Black T-Shirt (Sanjii X Straw Hats)</h3>
+      <p>$6.99</p>
+      <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Clothing/c-7.webp" alt="Accessory 2" />
+      </div>
+      <h3>Men Graphic Print Pure Cotton Black T-Shirt (Sasuke X Naruto)</h3>
+      <p>$6.99</p>
+      <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Clothing/c-8.webp" alt="Accessory 2" />
+      </div>
+      <h3>Men Graphic Print Pure Cotton Black T-Shirt (Gojo X Jujutsu Kaisen)</h3>
+      <p>$6.99</p>
+      <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Clothing/c-9.webp" alt="Accessory 2" />
+      </div>
+      <h3>Men Graphic Print Pure Cotton Round neck Black T-Shirt (Cyborg)</h3>
+      <p>$6.99</p>
+      <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Clothing/c-10.webp" alt="Accessory 2" />
+      </div>
+      <h3>Men Graphic Print Pure Cotton Round neck Black T-Shirt (Moon knight)</h3>
+      <p>$6.99</p>
+      <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Clothing/c-11.webp" alt="Accessory 2" />
+      </div>
+      <h3>Men Graphic Print Pure Cotton Round neck Black T-Shirt (Kakashi)</h3>
+      <p>$6.99</p>
+      <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Clothing/c-12.webp" alt="Accessory 2" />
+      </div>
+      <h3>Men Graphic Print Pure Cotton Round neck Black T-Shirt (Itachi Uchiha)</h3>
+      <p>$6.99</p>
+      <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Clothing/c-13.webp" alt="Accessory 2" />
+      </div>
+      <h3>Men Graphic Print Pure Cotton Round neck Black T-Shirt (Fire-Fist-Ace)</h3>
+      <p>$6.99</p>
+      <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Clothing/c-14.webp" alt="Accessory 2" />
+      </div>
+      <h3>Men Graphic Print Pure Cotton Round neck Black T-Shirt (Crazy Panda)</h3>
+      <p>$6.99</p>
+      <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Clothing/c-15.webp" alt="Accessory 2" />
+      </div>
+      <h3>Men Graphic Print Pure Cotton Round neck Black T-Shirt (Solo leveling)</h3>
+      <p>$6.99</p>
+      <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+    </div>
+
+
+  </section>
+
+  <footer>
+    
+  </footer>
+
+<!-- Cart Sidebar -->
+<div id="cartSidebar" class="cart-sidebar">
+  <h2>Your Cart</h2>
+  <div id="cartItems"></div>
+  <div class="cart-total">
+      <strong>Total:</strong> $<span id="cartTotal">0.00</span>
+  </div>
+  <button class="close-btn" onclick="toggleCart()">Close</button>
+</div>
+<div id="overlay" class="overlay" onclick="toggleCart()"></div>
+
+<script src="cart.js"></script>
+
+</body>
+</html>

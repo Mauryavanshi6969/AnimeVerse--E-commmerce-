@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Action Figures</title>
+  <link rel="stylesheet" href="action-figures.css" />
+  <link rel="stylesheet" href="cart.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1 class="glow-text">💥 Action Figures 💥</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product-list.html">Products</a></li>
+        <li><a href="#" onclick="toggleCart()">🛒 Cart (<span id="cartCount">0</span>)</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="products">
+    <!-- Sample Product (Repeat for 15) -->
+    <div class="product">
+      <div class="image-container">
+        <img src="img/Action Figures/f-1.webp" alt="Action Figure 1" />
+      </div>
+      <h3>AG MOTO Dragon Ball Z Goku Action Figure with flame Anime Action Figures Toy  (Multicolor)</h3>
+      <p>$19.99</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <div class="image-container">
+          <img src="img/Action Figures/f-2.webp" alt="Action Figure 1" />
+        </div>
+        <h3>OFFO Naruto Anime Itachi Uchiha Q Posket [15cm]For home Decor and Office Desk  (Multicolor)</h3>
+        <p>$19.99</p>
+        <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <div class="image-container">
+          <img src="img/Action Figures/f-3.webp" alt="Action Figure 1" />
+        </div>
+        <h3>GT Gala Time One piece-Monkey D Luffy Gear 5 Awakening Q Style Anime Action Figure  (Multicolor)</h3>
+        <p>$19.99</p>
+        <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <div class="image-container">
+          <img src="img/Action Figures/f-4.webp" alt="Action Figure 1" />
+        </div>
+        <h3>Lil Tara Naruto Kakashi Miniature Anime Action Figures Manga Collectible (Set Of 2)  (Multicolor)</h3>
+        <p>$19.99</p>
+        <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <div class="image-container">
+          <img src="img/Action Figures/f-5.webp" alt="Action Figure 1" />
+        </div>
+        <h3>AG MOTO Satoru Gojo Anime Action Figure Jujutsu Kaisen Toy Figure 21cm toys for kids  (Multicolor)</h3>
+        <p>$19.99</p>
+        <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <div class="image-container">
+          <img src="img/Action Figures/f-6.webp" alt="Action Figure 1" />
+        </div>
+        <h3>AG MOTO Demon Slayer Anime Action Figures Set 15cm Tanjiro Zenitsu Figures Toy For Kids  (Multicolor)</h3>
+        <p>$19.99</p>
+        <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <div class="image-container">
+          <img src="img/Action Figures/f-7.webp" alt="Action Figure 1" />
+        </div>
+        <h3>GT Gala Time Wolverine 17cm Action Figure - Movable Joints Collectible Figurine for Boys  (Yellow)</h3>
+        <p>$19.99</p>
+        <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <div class="image-container">
+          <img src="img/Action Figures/f-8.webp" alt="Action Figure 1" />
+        </div>
+        <h3>AG MOTO Deadpool Action figure 3pcs set Superhero For Car Decor toy and for home decor  (Red)</h3>
+        <p>$19.99</p>
+        <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <div class="image-container">
+          <img src="img/Action Figures/f-9.webp" alt="Action Figure 1" />
+        </div>
+        <h3>AG MOTO Roronoa Zoro Anime Action Figure In Standing Pose 20cm One Piece Action Figures  (Multicolor)</h3>
+        <p>$19.99</p>
+        <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <div class="image-container">
+          <img src="img/Action Figures/f-10.webp" alt="Action Figure 1" />
+        </div>
+        <h3>GT Gala Time 6 - Piece Of Demon Slayer Anime Action Figure, Cute Demon Slayer Anime Figurine  (Multicolor)</h3>
+        <p>$19.99</p>
+        <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <div class="image-container">
+          <img src="img/Action Figures/f-11.webp" alt="Action Figure 1" />
+        </div>
+        <h3>Lil Tara Little Gara Naruto, premium, sand charachter, Gara X Naruto, Big Size Action Figure Anime Collectible Desk Figure  (Multicolor)</h3>
+        <p>$19.99</p>
+        <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <div class="image-container">
+          <img src="img/Action Figures/f-12.webp" alt="Action Figure 1" />
+        </div>
+        <h3>Anime Saga Enterprises Roronoa Zoro One Peice Big Size Action Figure 3 Sword, Self Standing- 17 cm (Multicolor)</h3>
+        <p>$19.99</p>
+        <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <div class="image-container">
+          <img src="img/Action Figures/f-13.webp" alt="Action Figure 1" />
+        </div>
+        <h3>Raregets Dragon BallZ Anime Super Blue Gogeta, Premium, Big Size Action Figure 3 Sword, Self Standing- 17 cm (Multicolor)</h3>
+        <p>$19.99</p>
+        <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <div class="image-container">
+          <img src="img/Action Figures/f-14.webp" alt="Action Figure 1" />
+        </div>
+        <h3>AG MOTO One Piece Monkey D. Luffy Gear 5 Standing with thunder anime action figure, Rarest Action Figure (Multicolor)</h3>
+        <p>$19.99</p>
+        <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <div class="image-container">
+          <img src="img/Action Figures/f-15.webp" alt="Action Figure 1" />
+        </div>
+        <h3>RVM Toys Anime One Piece Luffy and Shanks Action Figure 18 cm Office Desk Cake Topper Toy, Most Rarest And Most premium  (Multicolor)</h3>
+        <p>$19.99</p>
+        <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+      </div>
+  </section>
+
+  <footer>
+    <p> </p>
+  </footer>
+
+      <!-- Cart Sidebar -->
+      <div id="cartSidebar" class="cart-sidebar">
+        <h2>Your Cart</h2>
+        <div id="cartItems"></div>
+        <div class="cart-total">
+            <strong>Total:</strong> $<span id="cartTotal">0.00</span>
+        </div>
+        <button class="close-btn" onclick="toggleCart()">Close</button>
+    </div>
+    <div id="overlay" class="overlay" onclick="toggleCart()"></div>
+
+    <script src="cart.js"></script>
+
+</body>
+</html>

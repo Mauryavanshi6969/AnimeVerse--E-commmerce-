@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rare Anime Posters</title>
+    <link rel="stylesheet" href="Posters.css">
+    <link rel="stylesheet" href="cart.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="glow-text">✨ Posters ✨</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" onclick="toggleCart()">🛒 Cart (<span id="cartCount">0</span>)</a></li>
+                <li><a href="product-list.html">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="products">
+        <!-- All 15 products -->
+        <div class="product">
+            <div class="image-container">
+                <img src="img/Posters/p-3.webp" alt="Luffy Uz">
+            </div>
+            <h3>Luffy Uz</h3>
+            <p>$29.99</p>
+            <button onclick="addToCart('Luffy Uz', 29.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <div class="image-container">
+                <img src="img/Posters/p-4.webp" alt="Leaf Village">
+            </div>
+            <h3>Leaf Village</h3>
+            <p>$39.99</p>
+            <button onclick="addToCart('Leaf Village', 39.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <div class="image-container">
+                <img src="img/Posters/p-5.webp" alt="Anime Series-1">
+            </div>
+            <h3>Anime Series-1</h3>
+            <p>$19.99</p>
+            <button onclick="addToCart('Anime Series-1', 19.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <div class="image-container">
+                <img src="img/Posters/p-1.jpg" alt="Demon Slayer">
+            </div>
+            <h3>Demon Slayer</h3>
+            <p>$49.99</p>
+            <button onclick="addToCart('Demon Slayer', 49.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <div class="image-container">
+                <img src="img/Posters/p-2.jpg" alt="One Piece">
+            </div>
+            <h3>One Piece</h3>
+            <p>$59.99</p>
+            <button onclick="addToCart('One Piece', 59.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <div class="image-container">
+                <img src="img/Posters/p-6.webp" alt="Death Note">
+            </div>
+            <h3>Death Note</h3>
+            <p>$69.99</p>
+            <button onclick="addToCart('Death Note', 69.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <div class="image-container">
+                <img src="img/Posters/p-7.jpg" alt="Naruto Flaming">
+            </div>
+            <h3>Naruto Flaming</h3>
+            <p>$22.99</p>
+            <button onclick="addToCart('Naruto Flaming', 22.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <div class="image-container">
+                <img src="img/Posters/p-8.jpg" alt="Satoru Gojo">
+            </div>
+            <h3>Satoru Gojo</h3>
+            <p>$10.99</p>
+            <button onclick="addToCart('Satoru Gojo', 10.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <div class="image-container">
+                <img src="img/Posters/p-9.jpg" alt="Inferno Eyes">
+            </div>
+            <h3>Inferno Eyes</h3>
+            <p>$11.99</p>
+            <button onclick="addToCart('Inferno Eyes', 11.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <div class="image-container">
+                <img src="img/Posters/p-10.jpg" alt="Wanted Shanks">
+            </div>
+            <h3>Wanted Shanks</h3>
+            <p>$17.99</p>
+            <button onclick="addToCart('Wanted Shanks', 17.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <div class="image-container">
+                <img src="img/Posters/p-11.jpg" alt="Furious Demon Slayer">
+            </div>
+            <h3>Furious Demon Slayer</h3>
+            <p>$23.99</p>
+            <button onclick="addToCart('Furious Demon Slayer', 23.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <div class="image-container">
+                <img src="img/Posters/p-12.jpg" alt="Straw Hats">
+            </div>
+            <h3>Straw Hats</h3>
+            <p>$8.99</p>
+            <button onclick="addToCart('Straw Hats', 8.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <div class="image-container">
+                <img src="img/Posters/p-13.jpg" alt="Monkey-D-Luffy">
+            </div>
+            <h3>Monkey-D-Luffy</h3>
+            <p>$8.99</p>
+            <button onclick="addToCart('Monkey-D-Luffy', 8.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <div class="image-container">
+                <img src="img/Posters/p-14.jpg" alt="Sukuna">
+            </div>
+            <h3>Sukuna</h3>
+            <p>$11.99</p>
+            <button onclick="addToCart('Sukuna', 11.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <div class="image-container">
+                <img src="img/Posters/p-15.jpeg" alt="Jin-Woo">
+            </div>
+            <h3>Jin-Woo</h3>
+            <p>$17.99</p>
+            <button onclick="addToCart('Jin-Woo', 17.99)">Add to Cart</button>
+        </div>
+    </section>
+
+    <footer>
+        
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div id="cartSidebar" class="cart-sidebar">
+        <h2>Your Cart</h2>
+        <div id="cartItems"></div>
+        <div class="cart-total">
+            <strong>Total:</strong> $<span id="cartTotal">0.00</span>
+        </div>
+        <button class="close-btn" onclick="toggleCart()">Close</button>
+    </div>
+    <div id="overlay" class="overlay" onclick="toggleCart()"></div>
+
+    <script src="cart.js"></script>
+</body>
+</html>
